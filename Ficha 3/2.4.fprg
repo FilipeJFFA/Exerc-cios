@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="lolaf"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-28 11:23:00 PM"/>
+        <attribute name="created" value="bG9sYWY7RklMSVBFOzIwMjMtMTAtMjg7MTE6MTM6MTggUE07MjI0NA=="/>
+        <attribute name="edited" value="bG9sYWY7RklMSVBFOzIwMjMtMTAtMjg7MTE6MjM6MDAgUE07MTsyMzQ0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a1, b1, c1, d1" type="Integer" array="False" size=""/>
+            <output expression="&quot;Introduza N&quot;" newline="True"/>
+            <input variable="a1"/>
+            <assign variable="b1" expression="Random(a1)+1"/>
+            <output expression="&quot;Introduza o numero&quot;" newline="True"/>
+            <input variable="d1"/>
+            <assign variable="c1" expression="0"/>
+            <while expression="b1 != d1">
+                <output expression="&quot;Tenta denovo&quot;" newline="True"/>
+                <input variable="d1"/>
+                <assign variable="c1" expression="c1 + 1"/>
+            </while>
+            <output expression="&quot;Conseguiste! Em apenas &quot; &amp; c1 &amp; &quot; tentativas&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

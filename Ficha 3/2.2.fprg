@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="lolaf"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-28 11:13:05 PM"/>
+        <attribute name="created" value="bG9sYWY7RklMSVBFOzIwMjMtMTAtMjg7MTE6MDc6MjkgUE07MjI0OQ=="/>
+        <attribute name="edited" value="bG9sYWY7RklMSVBFOzIwMjMtMTAtMjg7MTE6MTM6MDUgUE07MjsyMzQ5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num1, maior, menor" type="Real" array="False" size=""/>
+            <output expression="&quot;Introduza o numero: &quot;" newline="True"/>
+            <input variable="num1"/>
+            <assign variable="maior" expression="num1"/>
+            <assign variable="menor" expression="num1"/>
+            <while expression="num1!=0">
+                <output expression="&quot;Introduza o numero: &quot;" newline="True"/>
+                <input variable="num1"/>
+                <if expression="num1&gt;maior">
+                    <then>
+                        <assign variable="maior" expression="num1"/>
+                    </then>
+                    <else/>
+                </if>
+                <if expression="num1&lt;menor &amp;&amp; num1 !=0">
+                    <then>
+                        <assign variable="menor" expression="num1"/>
+                    </then>
+                    <else/>
+                </if>
+            </while>
+            <output expression="&quot;o maior numero foi o &quot; &amp; maior &amp; &quot; e o menor o &quot; &amp; menor" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
