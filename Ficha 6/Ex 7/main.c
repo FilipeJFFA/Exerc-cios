@@ -18,7 +18,7 @@ void arqsla(char *nome) {
 }
 
 int main() {
-    char nome[50];
+    char nome[100];
     printf("Introduza o nome do arquivo: ");
     gets(nome);
 
