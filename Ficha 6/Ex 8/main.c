@@ -38,9 +38,3 @@ int main() {
 
     return 0;
 }
-
-
-    mostraFicheiro(nome);
-
-    return 0;
-}
